@@ -1,0 +1,23 @@
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8  offset-lg-2">
+    
+                <h1 style="color: crimson; text-align: center;">LIXIL PC-V Dept</h1>
+                <h2 style="font-family: Arial, Helvetica, sans-serif; text-align: center; font-size: 20px;">CAMERA APP TEST</h2>
+                <form method="post" action="{{ url_for('tasks') }}">
+                <input type="submit" value="Stop/Start" name="stop" style="color: blue; margin-left: 500px; font-size: 15px; font-weight: 600;"/>
+                <input type="submit" value="Capture" name="click" style="color: blue; font-size: 15px; margin-left: 10px; font-weight: 600;"/>
+                <!-- <input type="submit" value="Grey" name="grey" />
+                <input type="submit" value="Negative" name="neg" />
+                <input type="submit" value="Face Only" name="face" /> -->
+                <input type="submit" value="Start/Stop Recording" name="rec" style="color: blue; font-size: 15px; margin-left: 10px; font-weight: 600;"/>
+                </form>
+                <img src="{{ url_for('video_feed') }}" height="900px", width="100%">
+                <h3 style="font-family:courier;">Đang Test Camera</h3>
+                <ol style="font-family:courier;">
+                
+            </div>
+        </div>
+    </div>
+    </body>
